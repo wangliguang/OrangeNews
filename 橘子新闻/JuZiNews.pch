@@ -1,0 +1,26 @@
+//
+//  JuZiNews.pch
+//  橘子新闻
+//
+//  Created by GG on 16/1/13.
+//  Copyright © 2016年 王立广. All rights reserved.
+//
+
+#ifndef JuZiNews_pch
+#define JuZiNews_pch
+
+#import "NSMutableDictionary+TitleTextAttributes.h"
+#import "GG_MainNavigationController.h"
+#import "UIViewExt.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "FMDBSqlite.h"
+#import "MBProgressHUD.h"
+
+
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight  [UIScreen mainScreen].bounds.size.height
+
+#define kCurrentUser @"currentUser"
+
+#endif /* JuZiNews_pch */
