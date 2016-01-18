@@ -131,15 +131,10 @@
 - (void)loginAccount{
     
     db = [FMDBSqlite openDataBase:@"favoriteNew.sqlite"];
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:[NSString stringWithFormat:@"%@User",accountStr] forKey:kCurrentUser];
-    
     
     NSString *queryTableName = [NSString stringWithFormat:@"%@User",accountStr];
     
     if ([FMDBSqlite DB:db isExistTable:queryTableName]) {
-        
-        [[NSUserDefaults standardUserDefaults] setObject:queryTableName forKey:kCurrentUser];
         
         NSString *sqliteStr = [NSString stringWithFormat:@"SELECT * FROM %@",queryTableName];
         FMResultSet *result = [FMDBSqlite DB:db queryData:sqliteStr];
@@ -147,6 +142,10 @@
         while ([result next]) {
             
             if ([accountStr isEqualToString:[result objectForColumnName:@"account"]] && [passwordStr isEqualToString:[result objectForColumnName:@"password"]]  ) {
+                
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                [defaults setObject:queryTableName forKey:kCurrentUser];
+
                 
                 [hud showAnimated:YES whileExecutingBlock:^{
                     
