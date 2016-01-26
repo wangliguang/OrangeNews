@@ -141,6 +141,7 @@
         GG_NewsMainTableViewController *tableVC = [[GG_NewsMainTableViewController alloc]initWithDict:dict];
         
         [self addChildViewController:tableVC];
+        
         tableVC.tableView.frame = CGRectMake(index*kScreenWidth,0 , kScreenWidth, CGRectGetHeight(newsTypeShowScrollView.frame));
         
         [newsTypeShowScrollView addSubview:tableVC.tableView];
@@ -152,10 +153,7 @@
 //点击segmentControl
 - (void)clickSegmentControl:(UISegmentedControl *)sender{
     
-    if ([sender selectedSegmentIndex] == 0) {
-        
-    }
-        
+    
     newsTypeShowScrollView.contentOffset = CGPointMake([sender selectedSegmentIndex]*kScreenWidth, 0);
     
     

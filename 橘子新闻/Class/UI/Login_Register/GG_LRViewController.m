@@ -48,16 +48,15 @@
     //选择器
     segmentControl = [[UISegmentedControl alloc]initWithItems:@[@"登录",@"注册"]];
     segmentControl.frame = CGRectMake(-2, 64, kScreenWidth+4, 40);
+    segmentControl.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:segmentControl];
-    segmentControl.tintColor = [UIColor groupTableViewBackgroundColor];
+    segmentControl.tintColor = [UIColor whiteColor];
     [segmentControl setTitleTextAttributes:[NSMutableDictionary titleTextAttributesWithTitleColor:[UIColor grayColor] WithTiteleFont:[UIFont systemFontOfSize:15]] forState:UIControlStateNormal];
     [segmentControl setTitleTextAttributes:[NSMutableDictionary titleTextAttributesWithTitleColor:[UIColor blackColor] WithTiteleFont:[UIFont boldSystemFontOfSize:15]] forState:UIControlStateSelected];
     [segmentControl addTarget:self action:@selector(clickSegmentControl:) forControlEvents:UIControlEventValueChanged];
     segmentControl.selectedSegmentIndex = 0;
     isLogin = YES;
     
-    
-
     
     //账号输入
     accountTextfiled = [[UITextField alloc]initWithFrame:CGRectMake(kMargin, segmentControl.bottom+10, kScreenWidth-kMargin*2, 50)];
@@ -88,7 +87,7 @@
     lineview2.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:lineview2];
     
-    
+    //确定Btn
     OKBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     OKBtn.frame = CGRectMake(kMargin, lineview2.bottom+20, kScreenWidth-kMargin*2, 50);
     OKBtn.backgroundColor = [UIColor colorWithRed:250/255.0 green:88/255.0 blue:31/255.0 alpha:1];
@@ -124,9 +123,6 @@
     
 }
 
-- (void)delayHide{
-    
-}
 
 - (void)loginAccount{
     
@@ -181,41 +177,8 @@
 
 - (void)registerAccount{
     
-    hud.labelText = @"正在注册";
     
-    db = [FMDBSqlite openDataBase:@"favoriteNew.sqlite"];
-    
-    NSString *createSqliteStr = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS %@User (account text, password text,title text, detail text, image text);",accountStr];
-    [FMDBSqlite DB:db createTable:createSqliteStr];
-    
-    NSString *updateSqliteStr = [NSString stringWithFormat:@"INSERT INTO %@User (account, password,title,detail,image) VALUES ('%@','%@','%@','%@','%@');",accountStr,accountStr,passwordStr,nil,nil,nil];
-    
-    if ([FMDBSqlite DB:db UpdateTable:updateSqliteStr] == YES){
         
-        [hud showAnimated:YES whileExecutingBlock:^{
-            
-            sleep(2);
-            hud.labelText = @"注册成功";
-            sleep(0.5);
-            
-            
-        }];
-        
-        
-    }else{
-        
-        [hud showAnimated:YES whileExecutingBlock:^{
-            
-            sleep(2);
-            hud.labelText = @"注册失败";
-            sleep(0.5);
-            
-        }];
-
-        
-        
-    }
-    
 
     
 }
