@@ -16,7 +16,8 @@
 #import "MJExtension.h"
 #import "FMDBSqlite.h"
 #import "MBProgressHUD.h"
-
+#import <BmobSDK/Bmob.h>
+#import "ReactiveCocoa.h"
 
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight  [UIScreen mainScreen].bounds.size.height

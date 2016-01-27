@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AE23537D759B2E48D706D4C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF317567443F9924B8B8879A /* libPods.a */; };
-		C604F67E1C472A580084D9DF /* GG_LRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C604F67D1C472A580084D9DF /* GG_LRViewController.m */; };
+		1A002967C82C3391F886124F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF473E668F1EA7BEB8B4EFB3 /* Pods.framework */; };
 		C604F6821C473C7C0084D9DF /* FMDBSqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = C604F6811C473C7C0084D9DF /* FMDBSqlite.m */; };
 		C66E369D1C4602EE00D8493A /* GG_NewsMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66E369C1C4602EE00D8493A /* GG_NewsMainTableViewController.m */; };
 		C66E36A21C461DB500D8493A /* news.plist in Resources */ = {isa = PBXBuildFile; fileRef = C66E36A11C461DB500D8493A /* news.plist */; };
@@ -33,6 +32,9 @@
 		C6A8ECAF1C46865600548E39 /* GG_HeadlineScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A8ECAE1C46865600548E39 /* GG_HeadlineScrollView.m */; };
 		C6A8ECB21C4688DA00548E39 /* GG_NewsHeadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A8ECB11C4688DA00548E39 /* GG_NewsHeadModel.m */; };
 		C6D1C2E31C47241F003DD9C6 /* GG_NewsFavoriteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C2E21C47241F003DD9C6 /* GG_NewsFavoriteTableViewController.m */; };
+		C6F5EFCF1C58773D00B0DCCE /* GG_LRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5EFCB1C58773D00B0DCCE /* GG_LRViewController.m */; };
+		C6F5EFD31C5877BA00B0DCCE /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5EFD21C5877BA00B0DCCE /* LoginView.m */; };
+		C6F5EFD61C58890C00B0DCCE /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F5EFD51C58890C00B0DCCE /* LoginViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +56,7 @@
 
 /* Begin PBXFileReference section */
 		03125B2F6DB18FBCE868A81E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		BF317567443F9924B8B8879A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C604F67C1C472A580084D9DF /* GG_LRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GG_LRViewController.h; sourceTree = "<group>"; };
-		C604F67D1C472A580084D9DF /* GG_LRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GG_LRViewController.m; sourceTree = "<group>"; };
+		AF473E668F1EA7BEB8B4EFB3 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C604F6801C473C7C0084D9DF /* FMDBSqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBSqlite.h; sourceTree = "<group>"; };
 		C604F6811C473C7C0084D9DF /* FMDBSqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBSqlite.m; sourceTree = "<group>"; };
 		C66E369B1C4602EE00D8493A /* GG_NewsMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GG_NewsMainTableViewController.h; sourceTree = "<group>"; };
@@ -100,6 +100,12 @@
 		C6A8ECB11C4688DA00548E39 /* GG_NewsHeadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GG_NewsHeadModel.m; sourceTree = "<group>"; };
 		C6D1C2E11C47241F003DD9C6 /* GG_NewsFavoriteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GG_NewsFavoriteTableViewController.h; sourceTree = "<group>"; };
 		C6D1C2E21C47241F003DD9C6 /* GG_NewsFavoriteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GG_NewsFavoriteTableViewController.m; sourceTree = "<group>"; };
+		C6F5EFCA1C58773D00B0DCCE /* GG_LRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GG_LRViewController.h; sourceTree = "<group>"; };
+		C6F5EFCB1C58773D00B0DCCE /* GG_LRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GG_LRViewController.m; sourceTree = "<group>"; };
+		C6F5EFD11C5877BA00B0DCCE /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		C6F5EFD21C5877BA00B0DCCE /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		C6F5EFD41C58890C00B0DCCE /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		C6F5EFD51C58890C00B0DCCE /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		DE9DEC42015A451FDFB1E62F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AE23537D759B2E48D706D4C /* libPods.a in Frameworks */,
+				1A002967C82C3391F886124F /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +147,10 @@
 		C604F67B1C472A350084D9DF /* Login_Register */ = {
 			isa = PBXGroup;
 			children = (
-				C604F67C1C472A580084D9DF /* GG_LRViewController.h */,
-				C604F67D1C472A580084D9DF /* GG_LRViewController.m */,
+				C6F5EFC91C58773D00B0DCCE /* Controller */,
+				C6F5EFCC1C58773D00B0DCCE /* Model */,
+				C6F5EFCD1C58773D00B0DCCE /* View */,
+				C6F5EFCE1C58773D00B0DCCE /* ViewModel */,
 			);
 			path = Login_Register;
 			sourceTree = "<group>";
@@ -270,7 +278,7 @@
 		C6A840531C45DE0500994130 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF317567443F9924B8B8879A /* libPods.a */,
+				AF473E668F1EA7BEB8B4EFB3 /* Pods.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -357,6 +365,48 @@
 				C6A840631C45DE9000994130 /* GG_MainNavigationController.m */,
 			);
 			path = CommonSuperClass;
+			sourceTree = "<group>";
+		};
+		C6F5EFC91C58773D00B0DCCE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5EFCA1C58773D00B0DCCE /* GG_LRViewController.h */,
+				C6F5EFCB1C58773D00B0DCCE /* GG_LRViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C6F5EFCC1C58773D00B0DCCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6F5EFCD1C58773D00B0DCCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5EFD01C5877BA00B0DCCE /* LoginView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6F5EFCE1C58773D00B0DCCE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5EFD41C58890C00B0DCCE /* LoginViewModel.h */,
+				C6F5EFD51C58890C00B0DCCE /* LoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6F5EFD01C5877BA00B0DCCE /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5EFD11C5877BA00B0DCCE /* LoginView.h */,
+				C6F5EFD21C5877BA00B0DCCE /* LoginView.m */,
+			);
+			path = LoginView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,16 +597,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F5EFD61C58890C00B0DCCE /* LoginViewModel.m in Sources */,
 				C66E36B91C4631E600D8493A /* UIViewExt.m in Sources */,
 				C6A8ECAF1C46865600548E39 /* GG_HeadlineScrollView.m in Sources */,
 				C6A8ECB21C4688DA00548E39 /* GG_NewsHeadModel.m in Sources */,
+				C6F5EFD31C5877BA00B0DCCE /* LoginView.m in Sources */,
 				C66E36BD1C463EFF00D8493A /* NSMutableDictionary+TitleTextAttributes.m in Sources */,
 				C604F6821C473C7C0084D9DF /* FMDBSqlite.m in Sources */,
 				C6A840221C45DDC800994130 /* main.m in Sources */,
+				C6F5EFCF1C58773D00B0DCCE /* GG_LRViewController.m in Sources */,
 				C6A840601C45DE1200994130 /* GG_NewsViewController.m in Sources */,
 				C66E369D1C4602EE00D8493A /* GG_NewsMainTableViewController.m in Sources */,
 				C6A8ECAC1C46440700548E39 /* GG_NewsCellModel.m in Sources */,
-				C604F67E1C472A580084D9DF /* GG_LRViewController.m in Sources */,
 				C66E36B11C462FA100D8493A /* GG_newsTableViewCell.m in Sources */,
 				C6A840641C45DE9000994130 /* GG_MainNavigationController.m in Sources */,
 				C6A840611C45DE1200994130 /* AppDelegate.m in Sources */,
